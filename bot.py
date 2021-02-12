@@ -1,6 +1,6 @@
 import os
 import discord
-import utils
+import lost_sectors
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -40,7 +40,7 @@ Command definitions
 
 @bot.command()
 async def sectors(ctx):
-    await ctx.send(embed=utils.get_lost_sectors_daily(discord.Embed))
+    await ctx.send(embed=lost_sectors.get_lost_sectors_daily(discord.Embed))
 
 
 ###
